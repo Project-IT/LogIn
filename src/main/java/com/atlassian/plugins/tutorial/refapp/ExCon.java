@@ -80,6 +80,7 @@ public class ExCon{
 
         findResults.getItems();
 
+
         LinkedList<Event> eventsList = new LinkedList<Event>();
         eventParameters ep = new eventParameters();
         Connection myConn;

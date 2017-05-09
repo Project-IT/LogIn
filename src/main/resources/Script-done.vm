@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>MyServlet Admin</title>
+    <meta name="decorator" content="atl.admin">
+  </head>
+  <body>
+       <div class="popup" >Click OK ;)!
+      <span class="popuptext" id="myPopup">Done!!!</span>
+    </div>
+  </body>
+</html>

@@ -6,15 +6,15 @@
   <body>
     <form id="admin" class="aui" action="" method="POST">
         <div class="field-group">
-             <label for="name">Name:</label>
+             <label for="name">Username:</label>
              <input type="text" id="name" name="name" class="text">
         </div>
         <div class="field-group">
-             <label for="age">Age:</label>
-             <input type="text" id="age" name="age" class="text">
+             <label for="age">Password:</label>
+             <input type="password" id="age" name="age" class="text">
         </div>
         <div class="field-group">
-            <input type="submit" value="Save" class="button">
+            <input type="submit" value="Save" class="button" onclick="alert('The script is running. Be patient :).');">
         </div>
     </form>
   </body>

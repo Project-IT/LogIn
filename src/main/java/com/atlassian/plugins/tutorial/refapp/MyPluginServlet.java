@@ -60,7 +60,7 @@ public class MyPluginServlet extends HttpServlet
         }
 
         if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".age") == null){
-            String noAge = "Enter an age here.";
+            String noAge = "Enter a password here.";
             pluginSettings.put(PLUGIN_STORAGE_KEY + ".age", noAge);
         }
 
@@ -68,6 +68,7 @@ public class MyPluginServlet extends HttpServlet
         context.put("age", pluginSettings.get(PLUGIN_STORAGE_KEY + ".age"));
         response.setContentType("text/html;charset=utf-8");
         templateRenderer.render("admin.vm", response.getWriter());
+
 
     }
 
@@ -81,6 +82,7 @@ public class MyPluginServlet extends HttpServlet
         */ExCon exCon=new ExCon();
         exCon.execute(req.getParameter("name"), req.getParameter("age"));
         response.sendRedirect("test");
+        templateRenderer.render("Script-done.vm", response.getWriter());
     }
 
     private void redirectToLogin(HttpServletRequest request, HttpServletResponse response) throws IOException
