@@ -12,6 +12,8 @@ import microsoft.exchange.webservices.data.credential.WebCredentials;
 import microsoft.exchange.webservices.data.search.CalendarView;
 import microsoft.exchange.webservices.data.search.FindItemsResults;
 
+import javax.servlet.Servlet;
+import javax.servlet.ServletException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.*;
@@ -22,7 +24,7 @@ import java.util.Date;
 
 public class ExCon{
 
-    public void execute(String username, String password){
+    public void execute(String username, String password)throws ServletException{
 
         String fromOutlook = "Syncing failed";
         //String username = map.get("Username");
