@@ -4,7 +4,7 @@
     <meta name="decorator" content="atl.admin">
   </head>
   <body>
-    <form id="admin" class="aui" action="" method="POST">
+    <form id="admin" class="aui" action="">
         <div class="field-group">
              <label for="name">Username:</label>
              <input type="text" id="name" name="name" class="text">
@@ -14,7 +14,7 @@
              <input type="password" id="age" name="age" class="text">
         </div>
         <div class="field-group">
-            <input type="submit" value="Save" class="button" onclick="alert('The script is running. Be patient :).');">
+            <input type="submit" value="Save" class="button" onclick="alert('Click Close and the Sync script will run :).');">
         </div>
     </form>
   </body>

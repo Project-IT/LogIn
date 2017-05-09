@@ -81,8 +81,9 @@ public class MyPluginServlet extends HttpServlet
 
         */ExCon exCon=new ExCon();
         exCon.execute(req.getParameter("name"), req.getParameter("age"));
-        response.sendRedirect("test");
-        templateRenderer.render("Script-done.vm", response.getWriter());
+      //  response.sendRedirect("test");
+       // response.setContentType("text/html;charset=utf-8");
+      //  templateRenderer.render("Script-done.vm", response.getWriter());
     }
 
     private void redirectToLogin(HttpServletRequest request, HttpServletResponse response) throws IOException
