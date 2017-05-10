@@ -78,8 +78,9 @@ public class MyPluginServlet extends HttpServlet
         /*PluginSettings pluginSettings = pluginSettingsFactory.createGlobalSettings();
         pluginSettings.put(PLUGIN_STORAGE_KEY + ".name", req.getParameter("name"));
         pluginSettings.put(PLUGIN_STORAGE_KEY + ".age", req.getParameter("age"));
+        */
 
-        */ExCon exCon=new ExCon();
+        ExCon exCon=new ExCon();
         exCon.execute(req.getParameter("name"), req.getParameter("age"));
       //  response.sendRedirect("test");
        // response.setContentType("text/html;charset=utf-8");

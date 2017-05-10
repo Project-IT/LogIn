@@ -3,9 +3,9 @@
     <title>MyServlet Admin</title>
     <meta name="decorator" content="atl.admin">
   </head>
-  <body>
-       <div class="popup" >Click OK ;)!
-      <span class="popuptext" id="myPopup">Done!!!</span>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Done.
+
     </div>
   </body>
-</html>
